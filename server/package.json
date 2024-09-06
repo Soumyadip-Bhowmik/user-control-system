@@ -1,10 +1,14 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for MERN Stack CRUD App",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "client-install": "npm install --prefix ../client",  // Install dependencies for client
+    "client-build": "npm run build --prefix ../client",  // Build client (React app)
+    "build": "npm run client-install && npm run client-build",  // Build client + backend
+    "heroku-postbuild": "npm run build"  // Render will use this to build the client after the backend
   },
   "keywords": [],
   "author": "",
