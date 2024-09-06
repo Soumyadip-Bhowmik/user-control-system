@@ -5,10 +5,10 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "client-install": "npm install --prefix ../client",  // Install dependencies for client
-    "client-build": "npm run build --prefix ../client",  // Build client (React app)
-    "build": "npm run client-install && npm run client-build",  // Build client + backend
-    "heroku-postbuild": "npm run build"  // Render will use this to build the client after the backend
+    "client-install": "npm install --prefix ../client",  
+    "client-build": "npm run build --prefix ../client",  
+    "build": "npm run client-install && npm run client-build",  
+    "heroku-postbuild": "npm run build" 
   },
   "keywords": [],
   "author": "",
