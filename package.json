@@ -1,11 +1,8 @@
 {
   "name": "mern-stack-app",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
-    "start": "cd server && npm start",
     "install-server": "npm install --prefix server",
-    "install": "npm run install-server"
-  },
-  "dependencies": {}
+    "start": "cd server && npm start"
+  }
 }
